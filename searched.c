@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define SIZE 30
 
 int main()
 {
-    char *source = "reference different conference adherent belligerence";
-    char *dest = "eren";
+    char *source = "reference different conference adherent belligerence.", dest[SIZE];
+    printf("%s\nEnter the word you want to search.\n", source);
+    scanf("%s", dest);
     int size = 0, size2 = 0, j = 0, count = 0;
     size = strlen(source), size2 = strlen(dest);
     for(int i = 0; i < size; i++)
@@ -25,5 +27,9 @@ int main()
 }
 
 /*
-output: 5
+input: 
+eren
+
+output:
+There are 5 searched words.
 */
