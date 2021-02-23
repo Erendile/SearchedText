@@ -21,7 +21,7 @@ int main()
         if(j == size2)
             count++, j = 0;
     }
-    printf("%d", count);
+    printf("There are %d searched words.", count);
 
     return 0;
 }
